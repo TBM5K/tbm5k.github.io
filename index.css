@@ -22,14 +22,20 @@ section{
     width: 100%;
 }
 
-#first > .head{
+#first .head{
     position: fixed;
     top: 20px;
+    padding-left: 5%;
+}
+
+#first > div{
+    display: flex;
+    align-items: center;
+    background-color: rgba( 39, 36, 36, 70%);
+    height: 100%;
 }
 
 #first{
-    display: flex;
-    align-items: center;
     background-image: url("assets/home.JPG");
     background-repeat: no-repeat;
     background-size: cover;
@@ -46,15 +52,14 @@ section{
     width: 100%;
 }
 
-#fourth div, #second div{
+#fourth > div, #second > div{
     height: 50%;
-    background-color: red;
     display: flex;
     flex-direction: column-reverse;
 }
 
-#second p{
-    font-size: 15px;
+#second p, #fourth p{
+    font-size: 11px;
 }
 
 #third{
@@ -106,4 +111,22 @@ a{
     background-image: url("assets/betlion.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.photo{
+    position: relative;
+}
+
+.card{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    /* height: 40px;
+    width: 200px; */
+    padding: 2%;
+    background-color: rgba( 39, 36, 36, 100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
